@@ -1,15 +1,15 @@
-# Wasm build environment image 
+# emsdk image 
 
 This is a Docker image useful for compiling wasm/emscripten projects.
 It's an Ubuntu LTS, with needed tools for emscripten.
 
-It's published as `voxowl/wasm-build-env` on the Docker Hub.
+It's published as `voxowl/emsdk` on the Docker Hub.
 
 ## Build the image locally
 
 ```shell
 # From the current directory
-docker build -t voxowl/wasm-build-env:2.0.34 -f ./Dockerfile .
+docker build -t voxowl/emsdk:2.0.34 -f ./Dockerfile .
 ```
 
 ## Build and publish the image for multiple architectures
@@ -18,5 +18,5 @@ docker build -t voxowl/wasm-build-env:2.0.34 -f ./Dockerfile .
 
 ```shell
 # From the current directory
-docker buildx build --platform linux/amd64,linux/arm64 -t voxowl/wasm-build-env:2.0.34 -f ./Dockerfile --push .
+docker buildx build --platform linux/amd64,linux/arm64 -t voxowl/emsdk:2.0.34 -f ./Dockerfile --push .
 ```
