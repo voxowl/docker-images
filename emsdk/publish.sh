@@ -18,6 +18,7 @@ echo "Building for emsdk version $EMSDK_VERSION"
 # ----------
 docker buildx build \
 --platform linux/amd64 \
+--platform linux/arm64 \
 --build-arg EMSDK_VERSION=$EMSDK_VERSION \
 -t voxowl/emsdk:$EMSDK_VERSION \
 -f ./Dockerfile \

@@ -1,12 +1,12 @@
-FROM --platform=amd64 ubuntu:22.04
+FROM ubuntu:24.04
 
 RUN apt update && apt install -y \
-    cmake \
-    python3 \
-    g++ \
-    unzip \
-    xz-utils \
-    lbzip2
+	cmake \
+	python3 \
+	g++ \
+	unzip \
+	xz-utils \
+	lbzip2
 
 ARG EMSDK_VERSION
 ENV EMSDK_NAME=emsdk-${EMSDK_VERSION}

@@ -1,4 +1,4 @@
-# emsdk image 
+# emsdk image
 
 This is a Docker image useful for compiling wasm/emscripten projects.
 It's an Ubuntu LTS, with needed tools for emscripten.
@@ -9,7 +9,7 @@ It's published as `voxowl/emsdk` on the Docker Hub.
 
 ```shell
 # From the current directory
-docker build -t voxowl/emsdk:2.0.34 -f ./Dockerfile .
+docker build -t voxowl/emsdk:3.1.68 -f ./Dockerfile --build-arg EMSDK_VERSION=3.1.68 .
 ```
 
 ## Build and publish the image for multiple architectures
