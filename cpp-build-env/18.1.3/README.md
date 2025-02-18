@@ -1,13 +1,13 @@
 # C++ build environment image
 
 This is a Docker image useful for compiling C/C++ code.
-It's an Ubuntu LTS, with `libreadline-dev` & `build-essential` packages.
+It's a Ubuntu 24.04 LTS, with `clang`, `cmake` and `ninja` programs.
 
 ## Build the image locally
 
 ```shell
 # From the current directory
-docker build -t voxowl/cpp-build-env:gcc-11.3.0 -f ./Dockerfile .
+docker build -t voxowl/cpp-build-env:18.1.3 -f ./Dockerfile .
 ```
 
 ## Build and publish the image for multiple architectures
@@ -16,5 +16,5 @@ docker build -t voxowl/cpp-build-env:gcc-11.3.0 -f ./Dockerfile .
 
 ```shell
 # From the current directory
-docker buildx build --platform linux/amd64,linux/arm64 -t voxowl/cpp-build-env:gcc-11.3.0 -f ./Dockerfile --push .
+docker buildx build --platform linux/amd64,linux/arm64 -t voxowl/cpp-build-env:18.1.3 -f ./Dockerfile --push .
 ```
