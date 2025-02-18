@@ -19,3 +19,9 @@ apt-get install --yes \
     zip
 
 ln -s "$(which python3)" /usr/bin/python
+
+# additional packages
+apt-get install --yes jq
+
+# install cleanup
+apt-get clean && rm -rf /var/lib/apt/lists/*
