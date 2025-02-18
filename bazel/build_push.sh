@@ -36,5 +36,6 @@ docker ${buildx:+"${buildx}"} build \
     --file "${GIT_ROOT}/bazel/Dockerfile" \
     --tag "${OCI_REPOSITORY}:${BAZEL_VERSION}" \
     --build-arg BAZEL_VERSION="${BAZEL_VERSION}" \
+    --platform linux/amd64 \
     --push \
     "${GIT_ROOT}"
