@@ -9,7 +9,7 @@ this is heavily inspired by https://github.com/bazelbuild/continuous-integration
 ```sh
 # From the /bazel directory
 ./build.sh voxowl/bazel 7.5.0
-./build.sh voxowl/bazel 8.1.0
+./build.sh voxowl/bazel 8.1.1
 ```
 
 ## Build and push the image to hub.docker.com
@@ -19,7 +19,7 @@ this is heavily inspired by https://github.com/bazelbuild/continuous-integration
 ```sh
 # From the /bazel directory
 ./build_push.sh voxowl/bazel 7.5.0
-./build_push.sh voxowl/bazel 8.1.0
+./build_push.sh voxowl/bazel 8.1.1
 ```
 
 ## Run the image
