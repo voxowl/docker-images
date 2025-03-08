@@ -9,8 +9,8 @@ It's published as `voxowl/emsdk` on the Docker Hub.
 
 ```shell
 # From the current directory
-./build.sh 4.0.3
-# docker build -t voxowl/emsdk:4.0.3 -f ./Dockerfile --build-arg EMSDK_VERSION=4.0.3 .
+./build.sh 4.0.4
+# docker build -t voxowl/emsdk:4.0.4 -f ./Dockerfile --build-arg EMSDK_VERSION=4.0.4 .
 ```
 
 ## Build and publish the image for multiple architectures
@@ -19,6 +19,6 @@ It's published as `voxowl/emsdk` on the Docker Hub.
 
 ```shell
 # From the current directory
-./publish.sh 4.0.3
-# docker buildx build --platform linux/amd64,linux/arm64 -t voxowl/emsdk:4.0.3 -f ./Dockerfile --build-arg EMSDK_VERSION=4.0.3 --push .
+./publish.sh 4.0.4
+# docker buildx build --platform linux/amd64,linux/arm64 -t voxowl/emsdk:4.0.4 -f ./Dockerfile --build-arg EMSDK_VERSION=4.0.4 --push .
 ```

@@ -1,12 +1,9 @@
 FROM ubuntu:24.04
 
-RUN apt update && apt install -y \
-	cmake \
-	python3 \
-	g++ \
-	unzip \
-	xz-utils \
-	lbzip2
+RUN apt update && \
+	apt install -y cmake python3 clang unzip xz-utils lbzip2 && \
+	apt-get clean && \
+	rm -rf /var/lib/apt/lists/*
 
 ARG EMSDK_VERSION
 ENV EMSDK_NAME=emsdk-${EMSDK_VERSION}
